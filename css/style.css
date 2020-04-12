@@ -4,7 +4,7 @@ body {
   width: 100%;
   height: 100%;
   -webkit-font-smoothing: antialiased;
-	-webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
 }
 h1{
   font-size: 2.5vw;
@@ -18,6 +18,11 @@ ul,li {
   background: #ffffff;;
   color:#333;
   left: 0;
+  position: fixed;
+  margin-top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.25);
 }
 .zagol_red {
   color: rgb(170, 11, 5);
@@ -35,7 +40,7 @@ ul,li {
 
 .nav-link-my{
   display:block;
-  padding: 1.4rem 1.5rem;
+  padding: 0.6rem 1.5rem;
   color: #333
 }
 .nav-link-my:focus,
@@ -45,7 +50,7 @@ ul,li {
 }
 .nav-link-my-1{
   display:block;
-  padding: 1.4rem 1.5rem;
+  padding: 0.6rem 1.5rem;
   color: white;
 }
 .nav-link-my-1:focus,
@@ -118,7 +123,8 @@ ul,li {
 .btn-danger-my {
 	color: #fff;
 	background-color: rgb(170, 11, 5);
-	border-color: rgb(170, 11, 5)
+  border-color: rgb(170, 11, 5);
+  padding: 1.5vw 2vw 1.5vw 2vw;
 }
 .btn-danger-my:hover {
 	color: #fff;
@@ -130,7 +136,7 @@ ul,li {
 	color: #fff;
 	background-color: #c82333;
 	border-color: #bd2130;
-	box-shadow: 0 0 0 .2rem rgba(225, 83, 97, .5)
+	box-shadow: 0 0 0 .2rem rgba(225, 83, 97, .5);
 }
 .btn-danger.disabled, .btn-danger-my:disabled {
 	color: #fff;
